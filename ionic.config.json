@@ -1,0 +1,7 @@
+{
+  "name": "refreshpageAPI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

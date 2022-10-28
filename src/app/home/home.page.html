@@ -1,0 +1,29 @@
+
+
+<ion-content  [fullscreen]="true" >
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+    <div class="content_div" *ngFor="let hasil of arrayData">
+      <ion-grid>
+        <ion-row class="" >
+          <ion-col size="12" >
+            <ion-list>
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img alt="" src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" />
+                </ion-thumbnail>
+                <ion-label>
+                  <h2> <span style="float: right"> 
+                  </span>{{hasil.npm}}</h2>
+                  <p id="rate" >{{hasil.nama}}</p>
+                </ion-label>
+              </ion-item>
+            </ion-list>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+</ion-content>
